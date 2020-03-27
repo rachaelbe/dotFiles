@@ -243,13 +243,13 @@ main = do
         
   -- autostart programs
   spawn "sh ~/.config/autostart-scripts/remove_bibtex_backup.sh"
-  spawn "sh ~/.config/autostart-scripts/start_compositor.sh"
   spawn "dunst &"
   spawn "guake"
   spawn "keepass ~/.KeePass/database.kdbx"
   spawn "mpDris2 &"
   spawn "nitrogen --restore"
   spawn "numlockx"
+  spawn "picom &"
   spawn "protonmail-bridge"
 
   xmobarInstalled <- doesFileExist "/usr/bin/xmobar"
